@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-df=pd.read_excel("C://Users//ACER//Desktop//dataset.xlsx" )
+df=pd.read_excel("dataset.xlsx" )
 X = df['V'].to_numpy().reshape(-1, 1)  
 Y = df['m'].to_numpy().reshape(-1, 1) 
 model= LinearRegression()
